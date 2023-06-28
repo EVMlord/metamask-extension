@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 
 import Box from '../../ui/box/box';
 import Button from '../../ui/button';
-import EditGasFeeButton from '../edit-gas-fee-button/edit-gas-fee-button';
 import { Text } from '../../component-library';
 import {
   AlignItems,
@@ -100,14 +99,6 @@ export default function ApproveContentCard({
               </Button>
             </Box>
           )}
-          {showEdit &&
-            showAdvanceGasFeeOptions &&
-            supportsEIP1559 &&
-            !renderSimulationFailureWarning && (
-              <EditGasFeeButton
-                userAcknowledgedGasMissing={userAcknowledgedGasMissing}
-              />
-            )}
         </Box>
       )}
       <Box
