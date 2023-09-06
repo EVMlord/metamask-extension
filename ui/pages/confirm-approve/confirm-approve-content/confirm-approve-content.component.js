@@ -100,7 +100,7 @@ export default class ConfirmApproveContent extends Component {
     footer,
     noBorder,
   }) {
-    const { supportsEIP1559, txData, useCurrencyRateCheck } = this.props;
+    const { supportsEIP1559 } = this.props;
     const { t } = this.context;
     return (
       <div
@@ -124,12 +124,6 @@ export default class ConfirmApproveContent extends Component {
           </div>
         )}
         <div className="confirm-approve-content__card-content">{content}</div>
-
-        <FeeDetailsComponent
-          txData={txData}
-          supportsEIP1559={supportsEIP1559}
-          useCurrencyRateCheck={useCurrencyRateCheck}
-        />
 
         {footer}
       </div>
@@ -523,6 +517,8 @@ export default class ConfirmApproveContent extends Component {
       customNonceValue,
       updateCustomNonce,
       showCustomizeNonceModal,
+      supportsEIP1559,
+      useCurrencyRateCheck,
     } = this.props;
     const { showFullTxDetails, setShowContractDetails } = this.state;
 
@@ -650,6 +646,15 @@ export default class ConfirmApproveContent extends Component {
               </div>
             ),
           })}
+
+          <Box marginRight={4} marginLeft={4}>
+            <FeeDetailsComponent
+              txData={txData}
+              supportsEIP1559={supportsEIP1559}
+              useCurrencyRateCheck={useCurrencyRateCheck}
+            />
+          </Box>
+
           {useNonceField &&
             this.renderApproveContentCard({
               showHeader: false,
