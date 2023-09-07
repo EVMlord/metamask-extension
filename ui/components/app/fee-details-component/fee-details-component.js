@@ -65,33 +65,39 @@ export default function FeeDetailsComponent({
     return hexMaximumTransactionFee;
   }, [isMultiLayerFeeNetwork, hexMaximumTransactionFee, estimatedL1Fees]);
 
-  const renderTotalDetailText = useCallback((value) => {
-    return (
-      <div className="confirm-page-container-content__total-value">
-        <LoadingHeartBeat estimateUsed={txData?.userFeeLevel} />
-        <UserPreferencedCurrencyDisplay
-          type={SECONDARY}
-          key="total-detail-text"
-          value={value}
-          hideLabel={Boolean(useNativeCurrencyAsPrimaryCurrency)}
-        />
-      </div>
-    );
-  }, [txData, useNativeCurrencyAsPrimaryCurrency]);
+  const renderTotalDetailText = useCallback(
+    (value) => {
+      return (
+        <div className="confirm-page-container-content__total-value">
+          <LoadingHeartBeat estimateUsed={txData?.userFeeLevel} />
+          <UserPreferencedCurrencyDisplay
+            type={SECONDARY}
+            key="total-detail-text"
+            value={value}
+            hideLabel={Boolean(useNativeCurrencyAsPrimaryCurrency)}
+          />
+        </div>
+      );
+    },
+    [txData, useNativeCurrencyAsPrimaryCurrency],
+  );
 
-  const renderTotalDetailTotal = useCallback((value) => {
-    return (
-      <div className="confirm-page-container-content__total-value">
-        <LoadingHeartBeat estimateUsed={txData?.userFeeLevel} />
-        <UserPreferencedCurrencyDisplay
-          type={PRIMARY}
-          key="total-detail-value"
-          value={value}
-          hideLabel={!useNativeCurrencyAsPrimaryCurrency}
-        />
-      </div>
-    );
-  }, [txData, useNativeCurrencyAsPrimaryCurrency]);
+  const renderTotalDetailTotal = useCallback(
+    (value) => {
+      return (
+        <div className="confirm-page-container-content__total-value">
+          <LoadingHeartBeat estimateUsed={txData?.userFeeLevel} />
+          <UserPreferencedCurrencyDisplay
+            type={PRIMARY}
+            key="total-detail-value"
+            value={value}
+            hideLabel={!useNativeCurrencyAsPrimaryCurrency}
+          />
+        </div>
+      );
+    },
+    [txData, useNativeCurrencyAsPrimaryCurrency],
+  );
 
   return (
     <>
