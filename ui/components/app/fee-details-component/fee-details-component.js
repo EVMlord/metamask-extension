@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import {
@@ -65,7 +65,7 @@ export default function FeeDetailsComponent({
     return hexMaximumTransactionFee;
   }, [isMultiLayerFeeNetwork, hexMaximumTransactionFee, estimatedL1Fees]);
 
-  const renderTotalDetailText = (value) => {
+  const renderTotalDetailText = useCallback((value) => {
     return (
       <div className="confirm-page-container-content__total-value">
         <LoadingHeartBeat estimateUsed={txData?.userFeeLevel} />
@@ -77,9 +77,9 @@ export default function FeeDetailsComponent({
         />
       </div>
     );
-  };
+  }, [txData, useNativeCurrencyAsPrimaryCurrency]);
 
-  const renderTotalDetailTotal = (value) => {
+  const renderTotalDetailTotal = useCallback((value) => {
     return (
       <div className="confirm-page-container-content__total-value">
         <LoadingHeartBeat estimateUsed={txData?.userFeeLevel} />
@@ -91,7 +91,7 @@ export default function FeeDetailsComponent({
         />
       </div>
     );
-  };
+  }, [txData, useNativeCurrencyAsPrimaryCurrency]);
 
   return (
     <>

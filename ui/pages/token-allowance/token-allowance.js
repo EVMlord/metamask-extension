@@ -283,13 +283,9 @@ export default function TokenAllowance({
     );
   };
 
-  const handleNextNonce = useCallback(() => {
+  useEffect(() => {
     dispatch(getNextNonce());
   }, [getNextNonce, dispatch]);
-
-  useEffect(() => {
-    handleNextNonce();
-  }, [handleNextNonce]);
 
   const handleUpdateCustomNonce = (value) => {
     dispatch(updateCustomNonce(value));
