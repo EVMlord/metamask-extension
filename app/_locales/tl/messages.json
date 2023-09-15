@@ -5021,9 +5021,6 @@
   "transactionDetailGasHeading": {
     "message": "Tinantyang bayad sa gas"
   },
-  "transactionDetailGasInfoV2": {
-    "message": "tinantya"
-  },
   "transactionDetailGasTooltipConversion": {
     "message": "Alamin pa ang tungkol sa mga bayad sa gas"
   },
