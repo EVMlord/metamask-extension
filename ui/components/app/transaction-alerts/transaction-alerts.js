@@ -21,6 +21,7 @@ const TransactionAlerts = ({
   userAcknowledgedGasMissing,
   setUserAcknowledgedGasMissing,
   txData,
+  onClickBlockaidSupport,
 }) => {
   const { estimateUsed, hasSimulationError, supportsEIP1559, isNetworkBusy } =
     useGasFeeContext();
@@ -33,6 +34,7 @@ const TransactionAlerts = ({
         ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
         <BlockaidBannerAlert
           securityAlertResponse={txData?.securityAlertResponse}
+          onClickBlockaidSupport={onClickBlockaidSupport}
         />
         ///: END:ONLY_INCLUDE_IN
       }
@@ -93,6 +95,7 @@ TransactionAlerts.propTypes = {
   userAcknowledgedGasMissing: PropTypes.bool,
   setUserAcknowledgedGasMissing: PropTypes.func,
   txData: PropTypes.object,
+  onClickBlockaidSupport: PropTypes.func,
 };
 
 export default TransactionAlerts;
