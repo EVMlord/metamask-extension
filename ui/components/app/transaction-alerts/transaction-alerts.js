@@ -24,7 +24,9 @@ import SecurityProviderBannerMessage from '../security-provider-banner-message/s
 import { MetaMetricsContext } from '../../../contexts/metametrics';
 import {
   MetaMetricsEventCategory,
+  ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
   MetaMetricsEventName,
+  ///: END:ONLY_INCLUDE_IN
 } from '../../../../shared/constants/metametrics';
 
 const TransactionAlerts = ({
@@ -42,6 +44,7 @@ const TransactionAlerts = ({
     (state) => getKnownMethodData(state, txParams.data) || {},
   );
 
+  ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
   const onClickSupportLink = useCallback(() => {
     trackEvent({
       category: MetaMetricsEventCategory.Transactions,
@@ -60,6 +63,7 @@ const TransactionAlerts = ({
       },
     });
   }, []);
+  ///: END:ONLY_INCLUDE_IN
 
   return (
     <div className="transaction-alerts">
