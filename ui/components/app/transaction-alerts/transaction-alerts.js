@@ -42,8 +42,6 @@ const TransactionAlerts = ({
     (state) => getKnownMethodData(state, txParams.data) || {},
   );
 
-  console.log(methodData, 'methodDatamethodData');
-
   const onClickSupportLink = useCallback(() => {
     trackEvent({
       category: MetaMetricsEventCategory.Transactions,
