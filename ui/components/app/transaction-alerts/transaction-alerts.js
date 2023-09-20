@@ -1,11 +1,18 @@
-import React, { useCallback, useContext } from 'react';
+import React, {
+  ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
+  useCallback,
+  useContext,
+  ///: END:ONLY_INCLUDE_IN
+} from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 
 import { PriorityLevels } from '../../../../shared/constants/gas';
 import {
   submittedPendingTransactionsSelector,
+  ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
   getKnownMethodData,
+  ///: END:ONLY_INCLUDE_IN
 } from '../../../selectors';
 import { useGasFeeContext } from '../../../contexts/gasFee';
 import { useI18nContext } from '../../../hooks/useI18nContext';
@@ -13,18 +20,20 @@ import { BannerAlert, ButtonLink, Text } from '../../component-library';
 import SimulationErrorMessage from '../../ui/simulation-error-message';
 import { SEVERITIES } from '../../../helpers/constants/design-system';
 import ZENDESK_URLS from '../../../helpers/constants/zendesk-url';
+// / BEGIN:ONLY_INCLUDE_IN(blockaid)
 import { getMethodName } from '../../../helpers/utils/metrics';
 import { TransactionType } from '../../../../shared/constants/transaction';
+import { MetaMetricsContext } from '../../../contexts/metametrics';
+// / END:ONLY_INCLUDE_IN
 
 import { isSuspiciousResponse } from '../../../../shared/modules/security-provider.utils';
 ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
 import BlockaidBannerAlert from '../security-provider-banner-alert/blockaid-banner-alert/blockaid-banner-alert';
 ///: END:ONLY_INCLUDE_IN
 import SecurityProviderBannerMessage from '../security-provider-banner-message/security-provider-banner-message';
-import { MetaMetricsContext } from '../../../contexts/metametrics';
 import {
-  MetaMetricsEventCategory,
   ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
+  MetaMetricsEventCategory,
   MetaMetricsEventName,
   ///: END:ONLY_INCLUDE_IN
 } from '../../../../shared/constants/metametrics';
@@ -38,12 +47,14 @@ const TransactionAlerts = ({
     useGasFeeContext();
   const pendingTransactions = useSelector(submittedPendingTransactionsSelector);
   const t = useI18nContext();
-  const trackEvent = useContext(MetaMetricsContext);
 
+  // / BEGIN:ONLY_INCLUDE_IN(blockaid)
+  const trackEvent = useContext(MetaMetricsContext);
   const txParams = txData?.txParams || {};
   const methodData = useSelector((state) =>
     getKnownMethodData(state, txParams?.data),
   );
+  // / END:ONLY_INCLUDE_IN
 
   ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
   const onClickSupportLink = useCallback(() => {
