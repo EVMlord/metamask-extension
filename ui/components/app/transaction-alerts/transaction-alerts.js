@@ -40,14 +40,13 @@ const TransactionAlerts = ({
   const t = useI18nContext();
   const trackEvent = useContext(MetaMetricsContext);
 
+  const txParams = txData?.txParams || {};
+  const methodData = useSelector((state) =>
+    getKnownMethodData(state, txParams?.data),
+  );
 
   ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
   const onClickSupportLink = useCallback(() => {
-    const { txParams = {} } = txData;
-    const methodData = useSelector(
-      (state) => getKnownMethodData(state, txParams.data) || {},
-    );
-
     trackEvent({
       category: MetaMetricsEventCategory.Transactions,
       event: MetaMetricsEventName.ExternalLinkClicked,
