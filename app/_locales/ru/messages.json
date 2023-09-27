@@ -1544,9 +1544,6 @@
   "experimental": {
     "message": "Экспериментальные"
   },
-  "exploreMetaMaskSnaps": {
-    "message": "Обзор MetaMask Snaps"
-  },
   "extendWalletWithSnaps": {
     "message": "Настройте кошелек под себя."
   },

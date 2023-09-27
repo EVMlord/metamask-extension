@@ -1544,9 +1544,6 @@
   "experimental": {
     "message": "Deneysel"
   },
-  "exploreMetaMaskSnaps": {
-    "message": "MetaMask Snaplerini keşfedin"
-  },
   "extendWalletWithSnaps": {
     "message": "Cüzdan deneyimini kişiselleştirin."
   },

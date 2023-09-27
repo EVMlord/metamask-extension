@@ -1544,9 +1544,6 @@
   "experimental": {
     "message": "試験運用"
   },
-  "exploreMetaMaskSnaps": {
-    "message": "MetaMask Snapsを閲覧"
-  },
   "extendWalletWithSnaps": {
     "message": "ウォレットのユーザー体験をカスタマイズします。"
   },
