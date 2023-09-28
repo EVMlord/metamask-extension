@@ -25,7 +25,10 @@ import {
 } from '../../../../helpers/utils/util';
 import { useI18nContext } from '../../../../hooks/useI18nContext';
 import { useOriginMetadata } from '../../../../hooks/useOriginMetadata';
-import { getTargetSubjectMetadata } from '../../../../selectors';
+import {
+  getSnapRegistryData,
+  getTargetSubjectMetadata,
+} from '../../../../selectors';
 import { disableSnap, enableSnap } from '../../../../store/actions';
 import { Box, ButtonLink, Text } from '../../../component-library';
 import ToggleButton from '../../../ui/toggle-button';
@@ -53,6 +56,12 @@ const SnapAuthorshipExpanded = ({ snapId, className, snap }) => {
   const subjectMetadata = useSelector((state) =>
     getTargetSubjectMetadata(state, snapId),
   );
+  const snapRegistryData = useSelector((state) =>
+    getSnapRegistryData(state, snapId),
+  );
+  const { website = undefined } = snapRegistryData
+    ? snapRegistryData.metadata
+    : {};
 
   const friendlyName = snapId && getSnapName(snapId, subjectMetadata);
 
@@ -134,6 +143,28 @@ const SnapAuthorshipExpanded = ({ snapId, className, snap }) => {
         </Box>
       </Box>
       <Box padding={4} width={BlockSize.Full}>
+        {website && (
+          <Box
+            display={Display.Flex}
+            flexDirection={FlexDirection.Row}
+            justifyContent={JustifyContent.spaceBetween}
+            width={BlockSize.Full}
+            marginBottom={4}
+          >
+            <Text variant={TextVariant.bodyMd} fontWeight={FontWeight.Medium}>
+              {t('snapDetailWebsite')}
+            </Text>
+            <Box
+              display={Display.Flex}
+              flexDirection={FlexDirection.Column}
+              alignItems={AlignItems.flexEnd}
+            >
+              <ButtonLink href={installOrigin.origin} target="_blank">
+                {website}
+              </ButtonLink>
+            </Box>
+          </Box>
+        )}
         {installOrigin && installInfo && (
           <Box
             display={Display.Flex}
@@ -149,9 +180,7 @@ const SnapAuthorshipExpanded = ({ snapId, className, snap }) => {
               flexDirection={FlexDirection.Column}
               alignItems={AlignItems.flexEnd}
             >
-              <ButtonLink href={installOrigin.origin} target="_blank">
-                {installOrigin.host}
-              </ButtonLink>
+              <Text>{installOrigin.host}</Text>
               <Text color={Color.textMuted}>
                 {t('installedOn', [
                   formatDate(installInfo.date, 'dd MMM yyyy'),
