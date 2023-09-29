@@ -1,7 +1,7 @@
 import { getSnapPrefix } from '@metamask/snaps-utils';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   AlignItems,
@@ -35,6 +35,7 @@ import ToggleButton from '../../../ui/toggle-button';
 import Tooltip from '../../../ui/tooltip/tooltip';
 import SnapAvatar from '../snap-avatar';
 import SnapVersion from '../snap-version/snap-version';
+import { usePhishingController } from '../../../../hooks/phishingControllerTest';
 
 const SnapAuthorshipExpanded = ({ snapId, className, snap }) => {
   const t = useI18nContext();
@@ -62,6 +63,19 @@ const SnapAuthorshipExpanded = ({ snapId, className, snap }) => {
   const { website = undefined } = snapRegistryData
     ? snapRegistryData.metadata
     : {};
+  const { checkPhishing } = usePhishingController();
+  const [safeWebsite, setSafeWebsite] = useState('');
+
+  useEffect(() => {
+    const performPhishingCheck = async () => {
+      const phishingResult = await checkPhishing(website);
+
+      if (!phishingResult.result) {
+        setSafeWebsite(website);
+      }
+    };
+    performPhishingCheck();
+  }, [checkPhishing, website]);
 
   const friendlyName = snapId && getSnapName(snapId, subjectMetadata);
 
@@ -143,7 +157,7 @@ const SnapAuthorshipExpanded = ({ snapId, className, snap }) => {
         </Box>
       </Box>
       <Box padding={4} width={BlockSize.Full}>
-        {website && (
+        {safeWebsite && (
           <Box
             display={Display.Flex}
             flexDirection={FlexDirection.Row}
@@ -160,7 +174,7 @@ const SnapAuthorshipExpanded = ({ snapId, className, snap }) => {
               alignItems={AlignItems.flexEnd}
             >
               <ButtonLink href={installOrigin.origin} target="_blank">
-                {website}
+                {safeWebsite}
               </ButtonLink>
             </Box>
           </Box>
