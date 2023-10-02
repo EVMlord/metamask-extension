@@ -268,6 +268,12 @@
   "addSnapAccountModalDescription": {
     "message": "Khám phá các tùy chọn để đảm bảo an toàn cho tài khoản của bạn với MetaMask Snap"
   },
+  "addSnapAccountToggle": {
+    "message": "Bật \"Thêm tài khoản Snap\""
+  },
+  "addSnapAccountsDescription": {
+    "message": "Bật tính năng này sẽ cho phép bạn thêm tài khoản Snap ngay từ danh sách tài khoản của bạn. Nếu bạn cài đặt tài khoản Snap, hãy nhớ rằng đây là một dịch vụ của bên thứ ba."
+  },
   "addSuggestedNFTs": {
     "message": "Thêm NFT được đề xuất"
   },
@@ -351,8 +357,14 @@
     "message": "Tất cả NFT của bạn từ $1",
     "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
+  "allow": {
+    "message": "Cho phép"
+  },
   "allowExternalExtensionTo": {
     "message": "Cho phép tiện ích mở rộng bên ngoài này:"
+  },
+  "allowMmiToConnectToCustodian": {
+    "message": "Điều này sẽ cho phép MMI kết nối với $1 để nhập tài khoản của bạn."
   },
   "allowSpendToken": {
     "message": "Cấp quyền truy cập vào $1 của bạn?",
@@ -702,6 +714,10 @@
   "coingecko": {
     "message": "CoinGecko"
   },
+  "comboNoOptions": {
+    "message": "Không tìm thấy tùy chọn nào",
+    "description": "Default text shown in the combo field dropdown if no options."
+  },
   "configureSnapPopupDescription": {
     "message": "Bây giờ bạn đang rời MetaMask để định cấu hình Snap này."
   },
@@ -719,6 +735,15 @@
   },
   "confirm": {
     "message": "Xác nhận"
+  },
+  "confirmConnectCustodianRedirect": {
+    "message": "Chúng tôi sẽ chuyển hướng bạn đến $1 sau khi nhấn vào tiếp tục."
+  },
+  "confirmConnectCustodianText": {
+    "message": "Để kết nối các tài khoản của bạn, hãy đăng nhập vào tài khoản $1 của bạn và nhấn vào nút 'kết nối với MMI'."
+  },
+  "confirmConnectionTitle": {
+    "message": "Xác nhận kết nối với $1"
   },
   "confirmPassword": {
     "message": "Xác nhận mật khẩu"
@@ -752,6 +777,9 @@
   },
   "connectCustodialAccountTitle": {
     "message": "Tài khoản lưu ký"
+  },
+  "connectCustodianAccounts": {
+    "message": "Kết nối $1 tài khoản"
   },
   "connectManually": {
     "message": "Kết nối thủ công với trang web hiện tại"
@@ -1434,6 +1462,18 @@
   },
   "enhancedTokenDetectionAlertMessage": {
     "message": "Tính năng phát hiện token nâng cao hiện có sẵn trên $1. $2"
+  },
+  "ensDomainsSettingDescriptionIntroduction": {
+    "message": "MetaMask cho phép bạn xem các tên miền ENS ngay trên thanh địa chỉ của trình duyệt. Sau đây là cách hoạt động:"
+  },
+  "ensDomainsSettingDescriptionOutroduction": {
+    "message": "Lưu ý rằng việc sử dụng tính năng này sẽ làm lộ địa chỉ IP của bạn với các dịch vụ bên thứ ba IPFS."
+  },
+  "ensDomainsSettingDescriptionPart1": {
+    "message": "MetaMask sẽ kiểm tra hợp đồng ENS của Ethereum để tìm mã được kết nối với tên ENS."
+  },
+  "ensDomainsSettingDescriptionPart2": {
+    "message": "Nếu mã liên kết đến IPFS, bạn có thể xem nội dung được liên kết với nó (thường là một trang web)."
   },
   "ensDomainsSettingTitle": {
     "message": "Hiển thị tên miền ENS trong thanh địa chỉ"
@@ -2313,6 +2353,9 @@
   "mmiBuiltAroundTheWorld": {
     "message": "MetaMask Institutional được thiết kế và xây dựng trên khắp thế giới."
   },
+  "mmiNewNFTDetectedInNFTsTabMessage": {
+    "message": "Cho phép MetaMask Institutional tự động phát hiện và hiển thị NFT trong ví của bạn."
+  },
   "more": {
     "message": "thêm"
   },
@@ -2325,6 +2368,38 @@
   },
   "name": {
     "message": "Tên"
+  },
+  "nameAddressLabel": {
+    "message": "Địa chỉ",
+    "description": "Label above address field in name component modal."
+  },
+  "nameInstructionsNew": {
+    "message": "Bạn đang tương tác với một địa chỉ hợp đồng không xác định. Nếu bạn tin tưởng tác giả này, hãy đặt tên hiển thị cá nhân để xác định tác giả đó trong tương lai.",
+    "description": "Instruction text in name component modal when value is not recognised."
+  },
+  "nameInstructionsSaved": {
+    "message": "Các tương tác với địa chỉ này sẽ luôn được xác định bằng tên hiển thị cá nhân này.",
+    "description": "Instruction text in name component modal when value is saved."
+  },
+  "nameLabel": {
+    "message": "Tên hiển thị",
+    "description": "Label above name input field in name component modal."
+  },
+  "nameModalTitleNew": {
+    "message": "Địa chỉ không xác định",
+    "description": "Title of the modal created by the name component when value is not recognised."
+  },
+  "nameModalTitleSaved": {
+    "message": "Địa chỉ đã lưu",
+    "description": "Title of the modal created by the name component when value is saved."
+  },
+  "nameNoProposedNames": {
+    "message": "Không tìm thấy tên đề xuất",
+    "description": "Text shown in the proposed name dropdown if none found."
+  },
+  "nameSetPlaceholder": {
+    "message": "Đặt tên hiển thị cá nhân...",
+    "description": "Placeholder text for name input field in name component modal."
   },
   "nativeToken": {
     "message": "Token gốc của mạng này là $1. Token này được dùng làm phí gas.",
@@ -2398,6 +2473,9 @@
   "networkNameTestnet": {
     "message": "Mạng thử nghiệm"
   },
+  "networkNameZkSyncEra": {
+    "message": "zkSync Era"
+  },
   "networkProvider": {
     "message": "Nhà cung cấp mạng"
   },
@@ -2449,6 +2527,15 @@
   },
   "newContract": {
     "message": "Hợp đồng mới"
+  },
+  "newNFTDetectedInImportNFTsMessageStrongText": {
+    "message": "Cài đặt > Bảo mật và quyền riêng tư"
+  },
+  "newNFTDetectedInNFTsTabMessage": {
+    "message": "Cho phép MetaMask tự động phát hiện và hiển thị NFT trong ví của bạn."
+  },
+  "newNFTsAutodetected": {
+    "message": "Tự động phát hiện NFT"
   },
   "newNetworkAdded": {
     "message": "“$1” đã được thêm thành công!"
@@ -2834,6 +2921,15 @@
   "notifications9Title": {
     "message": "👓 Chúng tôi đang làm cho các giao dịch dễ đọc hơn."
   },
+  "notificationsBuySellActionText": {
+    "message": "Dùng thử trên MetaMask Portfolio"
+  },
+  "notificationsBuySellDescription": {
+    "message": "Giới thiệu nút \"Mua và Bán\", giúp bạn dễ dàng truy cập vào tính năng mới nhất của chúng tôi: Bán. Khi nhấn vào nút này, bạn sẽ được chuyển đến MetaMask Portfolio, nơi bạn có thể chuyển đổi tiền mã hóa của mình thành tiền một cách nhanh chóng. Hiện tại, tính năng này chỉ khả dụng cho ETH trên mạng chính ở Mỹ (có áp dụng các hạn chế của tiểu bang), Vương quốc Anh và một số nơi ở Châu Âu."
+  },
+  "notificationsBuySellTitle": {
+    "message": "Bán tiền mã hóa để nhận tiền"
+  },
   "notificationsDropLedgerFirefoxDescription": {
     "message": "Firefox không còn hỗ trợ U2F nên Ledger sẽ không hoạt động với MetaMask trên Firefox. Thay vào đó hãy dùng thử MetaMask trên Google Chrome.",
     "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
@@ -3180,6 +3276,14 @@
     "message": "Cho phép Snap lấy các khóa tùy ý duy nhất cho Snap này mà không để lộ. Các khóa này tách biệt với tài khoản MetaMask của bạn và không liên quan đến khóa riêng tư hoặc Cụm từ khôi phục bí mật của bạn. Các Snap khác không thể truy cập thông tin này.",
     "description": "An extended description for the `snap_getEntropy` permission"
   },
+  "permission_getLocale": {
+    "message": "Xem ngôn ngữ ưa thích của bạn.",
+    "description": "The description for the `snap_getLocale` permission"
+  },
+  "permission_getLocaleDescription": {
+    "message": "Cho phép Snap này truy cập ngôn ngữ ưa thích của bạn từ cài đặt MetaMask. Điều này có thể được sử dụng để dịch và hiển thị nội dung của Snap theo ngôn ngữ của bạn.",
+    "description": "An extended description for the `snap_getLocale` permission"
+  },
   "permission_lifecycleHooks": {
     "message": "Sử dụng hook vòng đời.",
     "description": "The description for the `endowment:lifecycle-hooks` permission"
@@ -3191,6 +3295,10 @@
   "permission_manageAccounts": {
     "message": "Thêm và kiểm soát các tài khoản Ethereum",
     "description": "The description for `snap_manageAccounts` permission"
+  },
+  "permission_manageAccountsDescription": {
+    "message": "Cho phép Snap này thêm hoặc xóa tài khoản Ethereum, sau đó thực hiện giao dịch và ký bằng các tài khoản này.",
+    "description": "An extended description for the `snap_manageAccounts` permission"
   },
   "permission_manageBip32Keys": {
     "message": "Kiểm soát các tài khoản và tài sản của bạn ở $1 ($2).",
@@ -3833,6 +3941,9 @@
     "message": "Chọn tùy chọn này nếu bạn muốn dùng Etherscan để hiển thị các giao dịch đến trong danh sách giao dịch",
     "description": "$1 is the link to etherscan url and $2 is the link to the privacy policy of consensys APIs"
   },
+  "showIncomingTransactionsExplainer": {
+    "message": "Điều này dựa trên các API khác nhau của bên thứ ba cho mỗi mạng, có thể làm lộ địa chỉ Ethereum và địa chỉ IP của bạn."
+  },
   "showMore": {
     "message": "Hiển thị thêm"
   },
@@ -3904,6 +4015,12 @@
   },
   "smartSwapsSubDescription": {
     "message": "* Hoán đổi thông minh sẽ cố gắng gửi giao dịch của bạn nhiều lần một cách riêng tư. Nếu tất cả các lần thử đều không thành công, giao dịch sẽ được phát công khai để đảm bảo Hoán đổi của bạn được thực hiện thành công."
+  },
+  "snapAccounts": {
+    "message": "Tài khoản Snap"
+  },
+  "snapAccountsDescription": {
+    "message": "Tài khoản được kiểm soát bởi Snap bên thứ ba."
   },
   "snapConfigure": {
     "message": "Định cấu hình"
@@ -4043,9 +4160,17 @@
   "snapsNoInsight": {
     "message": "Snap không trả về bất kỳ thông tin chi tiết nào"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "Bạn thừa nhận rằng mọi Snap mà bạn cài đặt đều là Dịch vụ bên thứ ba, trừ khi được xác định khác, như được định nghĩa trong $1 của Consensys. Việc bạn sử dụng Dịch vụ bên thứ ba sẽ phải tuân theo các điều khoản và điều kiện riêng do nhà cung cấp Dịch vụ bên thứ ba quy định. Consensys không khuyến nghị bất kỳ cá nhân cụ thể nào sử dụng bất kỳ Snap nào vì bất kỳ lý do cụ thể nào. Bạn tự chịu rủi ro khi truy cập, tin tưởng hoặc sử dụng Dịch vụ bên thứ ba. Consensys từ chối mọi trách nhiệm và nghĩa vụ pháp lý đối với mọi tổn thất khi bạn sử dụng Dịch vụ bên thứ ba.",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "Mọi thông tin mà bạn chia sẻ với Dịch vụ bên thứ ba sẽ được Dịch vụ bên thứ ba đó thu thập trực tiếp theo chính sách quyền riêng tư của họ. Vui lòng tham khảo chính sách quyền riêng tư của họ để biết thêm thông tin.",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "Consensys không có quyền truy cập vào các thông tin mà bạn chia sẻ với Dịch vụ bên thứ ba.",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "Quản lý Snap"
@@ -5200,6 +5325,9 @@
   },
   "useNftDetection": {
     "message": "Tự động phát hiện NFT"
+  },
+  "useNftDetectionDescriptionText": {
+    "message": "Cho phép MetaMask thêm các NFT mà bạn sở hữu bằng cách sử dụng dịch vụ của bên thứ ba (như OpenSea). Tính năng Tự động phát hiện NFT sẽ làm lộ địa chỉ IP và tài khoản của bạn với các dịch vụ này. Việc bật tính năng này có thể liên kết địa chỉ IP của bạn với địa chỉ Ethereum của bạn và hiển thị các NFT giả do những kẻ lừa đảo phát tán. Bạn có thể thêm token theo cách thủ công để tránh rủi ro này."
   },
   "usePhishingDetection": {
     "message": "Sử dụng tính năng phát hiện lừa đảo"

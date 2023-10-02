@@ -268,6 +268,12 @@
   "addSnapAccountModalDescription": {
     "message": "MetaMask Snaps ile hesabınızı güvende tutma seçeneklerini keşfedin"
   },
+  "addSnapAccountToggle": {
+    "message": "\"Snap hesabı ekle\" özelliğini etkinleştir"
+  },
+  "addSnapAccountsDescription": {
+    "message": "Bu özelliğin açılması size doğrudan hesap listenizden bir Snap hesabı ekleme seçeneği verir. Bir Snap hesabı yüklüyorsanız bunun üçüncü taraf bir hizmet olduğunu unutmayın."
+  },
   "addSuggestedNFTs": {
     "message": "Önerilen NFT'leri ekleyin"
   },
@@ -351,8 +357,14 @@
     "message": "Tüm $1 NFT'leriniz",
     "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
+  "allow": {
+    "message": "İzin Ver"
+  },
   "allowExternalExtensionTo": {
     "message": "Bu harici uzantının şunu yapmasına izin ver:"
+  },
+  "allowMmiToConnectToCustodian": {
+    "message": "MMI'nin hesaplarınızı içe aktarmak için $1 ile bağlantı kurmasına izin verir."
   },
   "allowSpendToken": {
     "message": "$1 erişimine izin ver?",
@@ -702,11 +714,15 @@
   "coingecko": {
     "message": "CoinGecko"
   },
+  "comboNoOptions": {
+    "message": "Hiçbir seçenek bulunamadı",
+    "description": "Default text shown in the combo field dropdown if no options."
+  },
   "configureSnapPopupDescription": {
-    "message": "Şu anda bu snapi yapılandırmak için MetaMask'tan ayrılıyorsunuz."
+    "message": "Şu anda bu snapi yapılandırmak için MetaMask'ten ayrılıyorsunuz."
   },
   "configureSnapPopupInstallDescription": {
-    "message": "Şu anda bu snapi yüklemek için MetaMask'tan ayrılıyorsunuz."
+    "message": "Şu anda bu snapi yüklemek için MetaMask'ten ayrılıyorsunuz."
   },
   "configureSnapPopupInstallTitle": {
     "message": "Snapi yükle"
@@ -719,6 +735,15 @@
   },
   "confirm": {
     "message": "Onayla"
+  },
+  "confirmConnectCustodianRedirect": {
+    "message": "Devam et düğmesine tıkladığınızda sizi şuraya yönlendireceğiz: $1."
+  },
+  "confirmConnectCustodianText": {
+    "message": "Hesaplarınızı bağlamak için $1 hesabınızda oturum açın ve 'MMI'ye bağlan' düğmesine tıklayın."
+  },
+  "confirmConnectionTitle": {
+    "message": "$1 ile bağlantıyı onayla"
   },
   "confirmPassword": {
     "message": "Şifreyi onayla"
@@ -752,6 +777,9 @@
   },
   "connectCustodialAccountTitle": {
     "message": "Saklayıcı Kurum Hesapları"
+  },
+  "connectCustodianAccounts": {
+    "message": "$1 hesaplarını bağla"
   },
   "connectManually": {
     "message": "Mevcut siteye manuel olarak bağlan"
@@ -1434,6 +1462,18 @@
   },
   "enhancedTokenDetectionAlertMessage": {
     "message": "Gelişmiş token algılama şu anda $1 üzerinden kullanılabilir. $2"
+  },
+  "ensDomainsSettingDescriptionIntroduction": {
+    "message": "MetaMask, ENS alanlarını doğrudan tarayıcınızın adres çubuğunda görmenizi sağlar. Şöyle çalışır:"
+  },
+  "ensDomainsSettingDescriptionOutroduction": {
+    "message": "Bu özelliğin kullanılmasının IP adresinizi IPFS üçüncü taraf hizmetleriyle paylaştığını unutmayın."
+  },
+  "ensDomainsSettingDescriptionPart1": {
+    "message": "MetaMask, ENS adına bağlı kodu bulmak için Ethereum'un ENS sözleşmesi ile kontrol gerçekleştirir."
+  },
+  "ensDomainsSettingDescriptionPart2": {
+    "message": "Kod IPFS'ye bağlanıyorsa onunla ilişkili içeriği (genellikle bir web sitesi) görebilirsiniz."
   },
   "ensDomainsSettingTitle": {
     "message": "ENS alanlarını adres çubuğunda göster"
@@ -2313,6 +2353,9 @@
   "mmiBuiltAroundTheWorld": {
     "message": "MetaMask Institutional dünya çapında tasarlanmış ve yapılmıştır."
   },
+  "mmiNewNFTDetectedInNFTsTabMessage": {
+    "message": "MetaMask Institutional'ın otomatik olarak cüzdanınızdaki NFT'leri algılayıp göstermesine izin verin."
+  },
   "more": {
     "message": "daha fazla"
   },
@@ -2325,6 +2368,38 @@
   },
   "name": {
     "message": "Adı"
+  },
+  "nameAddressLabel": {
+    "message": "Adres",
+    "description": "Label above address field in name component modal."
+  },
+  "nameInstructionsNew": {
+    "message": "Bilinmeyen bir sözleşme adresi ile etkileşimde bulunuyorsunuz. Bu yazara güveniyorsanız ileride onu tanımlamak için kişisel bir görüntü adı belirleyin.",
+    "description": "Instruction text in name component modal when value is not recognised."
+  },
+  "nameInstructionsSaved": {
+    "message": "Bu adresle olan etkileşimler her zaman bu kişisel görüntü adı kullanılarak tanımlanacaktır.",
+    "description": "Instruction text in name component modal when value is saved."
+  },
+  "nameLabel": {
+    "message": "Görüntü adı",
+    "description": "Label above name input field in name component modal."
+  },
+  "nameModalTitleNew": {
+    "message": "Bilinmeyen adres",
+    "description": "Title of the modal created by the name component when value is not recognised."
+  },
+  "nameModalTitleSaved": {
+    "message": "Adres kaydedildi",
+    "description": "Title of the modal created by the name component when value is saved."
+  },
+  "nameNoProposedNames": {
+    "message": "Önerilen ad bulunamadı",
+    "description": "Text shown in the proposed name dropdown if none found."
+  },
+  "nameSetPlaceholder": {
+    "message": "Kişisel bir görüntü adı belirleyin...",
+    "description": "Placeholder text for name input field in name component modal."
   },
   "nativeToken": {
     "message": "Bu ağdaki yerli token $1. Bu gaz ücretleri için kullanılan tokendir.",
@@ -2398,6 +2473,9 @@
   "networkNameTestnet": {
     "message": "Test ağı"
   },
+  "networkNameZkSyncEra": {
+    "message": "zkSync Era"
+  },
   "networkProvider": {
     "message": "Ağ sağlayıcısı"
   },
@@ -2449,6 +2527,15 @@
   },
   "newContract": {
     "message": "Yeni sözleşme"
+  },
+  "newNFTDetectedInImportNFTsMessageStrongText": {
+    "message": "Ayarlar > Güvenlik ve gizlilik"
+  },
+  "newNFTDetectedInNFTsTabMessage": {
+    "message": "MetaMask'ın otomatik olarak cüzdanınızdaki NFT'leri algılayıp göstermesine izin verin."
+  },
+  "newNFTsAutodetected": {
+    "message": "NFT otomatik algılama"
   },
   "newNetworkAdded": {
     "message": "\"$1\" başarılı bir şekilde eklendi!"
@@ -2834,6 +2921,15 @@
   "notifications9Title": {
     "message": "👓 İşlemlerin okunmasını daha kolay hale getiriyoruz."
   },
+  "notificationsBuySellActionText": {
+    "message": "MetaMask Portfolio'da deneyin"
+  },
+  "notificationsBuySellDescription": {
+    "message": "Kullanımınıza sunduğumuz \"Al ve Sat\" düğmesi, en yeni özelliğimize kolayca ulaşmanızı sağlar: Sat. Tıklandığında, kriptonuzu anında nakde çevirebileceğiniz MetaMask Portfolio'ya yönlendirilirsiniz. İlk olarak ABD'de (eyalet kısıtlamaları uygulanır), Birleşik Krallık'ta ve Avrupa'nın belirli kısımlarında ana ağda ETH için kullanılabilir."
+  },
+  "notificationsBuySellTitle": {
+    "message": "Kriptonuzu satarak nakde dönüştürün"
+  },
   "notificationsDropLedgerFirefoxDescription": {
     "message": "Firefox artık U2F'yi desteklemiyor, bu yüzden Ledger Firefox'ta Metamask ile çalışmayacaktır. Onun yerine MetaMask'i Google Chrome'da deneyin.",
     "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
@@ -3177,8 +3273,16 @@
     "description": "The description for the `snap_getEntropy` permission"
   },
   "permission_getEntropyDescription": {
-    "message": "Snapin, ifşa etmeden, bu snap'e özel rastgele anahtarlar türetmesine izin verin. Bu anahtarlar MetaMask hesap veya hesaplarınızdan ayrıdır ve özel anahtarlarınızla ya da Gizli Kurtarma İfadenizle bağlantılı değildir. Diğer snapler bu bilgilere erişim sağlayamaz.",
+    "message": "Snapin, ifşa etmeden, bu snape özel rastgele anahtarlar türetmesine izin verin. Bu anahtarlar MetaMask hesap veya hesaplarınızdan ayrıdır ve özel anahtarlarınızla ya da Gizli Kurtarma İfadenizle bağlantılı değildir. Diğer snapler bu bilgilere erişim sağlayamaz.",
     "description": "An extended description for the `snap_getEntropy` permission"
+  },
+  "permission_getLocale": {
+    "message": "Tercih ettiğiniz dili görüntüleyin.",
+    "description": "The description for the `snap_getLocale` permission"
+  },
+  "permission_getLocaleDescription": {
+    "message": "Bu Snapin MetaMask ayarlarınızdan tercih ettiğiniz dile erişim sağlamasına izin verin. Snapin içeriğini dilinizi kullanarak yerelleştirmek ve görüntülemek için bu özellik kullanılabilir.",
+    "description": "An extended description for the `snap_getLocale` permission"
   },
   "permission_lifecycleHooks": {
     "message": "Yaşam döngüsü kancalarını kullanın.",
@@ -3192,12 +3296,16 @@
     "message": "Ethereum hesaplarını ekle ve kontrol et",
     "description": "The description for `snap_manageAccounts` permission"
   },
+  "permission_manageAccountsDescription": {
+    "message": "Bu Snap'in Ethereum hesabı eklemesine veya kaldırmasına izin verin, ardından bu hesaplarla işlem ve imza gerçekleştirin.",
+    "description": "An extended description for the `snap_manageAccounts` permission"
+  },
   "permission_manageBip32Keys": {
     "message": "$1 ($2) altındaki hesaplarınızı ve varlıklarınızı kontrol edin.",
     "description": "The description for the `snap_getBip32Entropy` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
   "permission_manageBip32KeysDescription": {
-    "message": "Snap'in, ifşa etmeden, Gizli Kurtarma İfadenize göre BIP-32 anahtar çiftleri türetmesine izin verin. Bu işlem $1 üzerinde tüm hesaplara ve varlıklara tam erişim verir.\nSnap, anahtarları yönetme yetkisi ile Ethereum (EVM'ler) ötesinde çeşitli blokzinciri protokollerini destekleyebilir.",
+    "message": "Snapin, ifşa etmeden, Gizli Kurtarma İfadenize göre BIP-32 anahtar çiftleri türetmesine izin verin. Bu işlem $1 üzerinde tüm hesaplara ve varlıklara tam erişim verir.\nSnap, anahtarları yönetme yetkisi ile Ethereum (EVM'ler) ötesinde çeşitli blokzinciri protokollerini destekleyebilir.",
     "description": "An extended description for the `snap_getBip32Entropy` permission. $1 is a derivation path (name)"
   },
   "permission_manageBip44Keys": {
@@ -3833,6 +3941,9 @@
     "message": "Etherscan'in işlemler listesinde gelecek işlemleri göstermesi için bunu seçin",
     "description": "$1 is the link to etherscan url and $2 is the link to the privacy policy of consensys APIs"
   },
+  "showIncomingTransactionsExplainer": {
+    "message": "Ethereum adresinizi ve IP adresinizi açığa çıkaran her ağ için farklı üçüncü taraf API'lerine güvenir."
+  },
   "showMore": {
     "message": "Daha fazlasını göster"
   },
@@ -3904,6 +4015,12 @@
   },
   "smartSwapsSubDescription": {
     "message": "* Akıllı Swap'lar, işleminizi birden çok kez özel olarak göndermeye çalışır. Tüm denemeler başarısız olursa Swap işleminin başarılı bir şekilde gerçekleşmesini sağlamak için işlem herkese açık olarak yayınlanacaktır."
+  },
+  "snapAccounts": {
+    "message": "Snap hesapları"
+  },
+  "snapAccountsDescription": {
+    "message": "Üçüncü taraf Snapleri tarafından kontrol edilen hesaplar."
   },
   "snapConfigure": {
     "message": "Yapılandır"
@@ -4043,9 +4160,17 @@
   "snapsNoInsight": {
     "message": "Snap herhangi bir ayrıntıya ulaşamadı"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "Yüklediğiniz her Snap'in Consensys $1 içinde tanımlanan şekilde, aksi belirtilmedikçe bir Üçüncü Taraf Hizmet olduğunu kabul edersiniz. Üçüncü Taraf Hizmetlerini kullanımınız Üçüncü Taraf Hizmet sağlayıcısı tarafından belirtilen ayrı şart ve koşullar tarafından yönetilir. Consensys herhangi bir Snapin herhangi belirli bir sebeple herhangi belirli bir şahıs tarafından kullanımını önermez. Üçüncü Taraf Hizmetine erişiminizin, güvenmenizin veya kullanımınızın riski size aittir. Consensys, Üçüncü Taraf Hizmetlerini kullanımınızdan kaynaklanan zararlar için her türlü sorumluluğu ve yükümlülüğü reddeder.",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "Üçüncü Taraf Hizmetleri ile paylaştığınız tüm bilgiler söz konusu Üçüncü Taraf Hizmetlerinin gizlilik politikalarına göre doğrudan üçüncü taraflar tarafından toplanacaktır. Daha fazla bilgi için lütfen üçüncü tarafların gizlilik politikalarına bakın.",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "Consensys'un bu Üçüncü Taraf Hizmetler ile paylaştığınız bilgilere hiçbir erişimi bulunmamaktadır.",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "Snaplerini yönet"
@@ -5200,6 +5325,9 @@
   },
   "useNftDetection": {
     "message": "NFT'leri otomatik algıla"
+  },
+  "useNftDetectionDescriptionText": {
+    "message": "MetaMask'in üçüncü taraf hizmetleri (OpenSea gibi) kullanarak size ait olan NFT'leri eklemesine izin verin. NFT'leri otomatik algılama, IP adresinizi ve hesap adresinizi bu hizmetlerle paylaşır. Bu özelliğin etkinleştirilmesi IP adresinizi Ethereum adresinizle ilişkilendirebilir ve dolandırıcılar tarafından airdrop'u gerçekleştirilen sahte NFT'leri gösterebilir. Bu riski önlemek için tokenleri elle ekleyebilirsiniz."
   },
   "usePhishingDetection": {
     "message": "Kimlik avı algılama kullan"

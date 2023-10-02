@@ -268,6 +268,12 @@
   "addSnapAccountModalDescription": {
     "message": "Descubra opções para manter sua conta segura com o MetaMask Snaps"
   },
+  "addSnapAccountToggle": {
+    "message": "Ativar \"Adicionar conta de Snaps\""
+  },
+  "addSnapAccountsDescription": {
+    "message": "Ao ativar este recurso, você terá a opção de adicionar uma conta de Snaps direto da sua lista de contas. Se você instalar uma conta de Snaps, lembre-se de que ela é um serviço terceirizado."
+  },
   "addSuggestedNFTs": {
     "message": "Adicionar NFTs sugeridos"
   },
@@ -351,8 +357,14 @@
     "message": "Todos os seus NFTs de $1",
     "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
+  "allow": {
+    "message": "Permitir"
+  },
   "allowExternalExtensionTo": {
     "message": "Permitir que essa extensão externa:"
+  },
+  "allowMmiToConnectToCustodian": {
+    "message": "Isso permite que o MMI se conecte ao $1 para importar suas contas."
   },
   "allowSpendToken": {
     "message": "Você dá permissão para acessar seus $1?",
@@ -702,6 +714,10 @@
   "coingecko": {
     "message": "CoinGecko"
   },
+  "comboNoOptions": {
+    "message": "Nenhuma opção encontrada",
+    "description": "Default text shown in the combo field dropdown if no options."
+  },
   "configureSnapPopupDescription": {
     "message": "Você está saindo da MetaMask para configurar esse snap."
   },
@@ -719,6 +735,15 @@
   },
   "confirm": {
     "message": "Confirmar"
+  },
+  "confirmConnectCustodianRedirect": {
+    "message": "Você será redirecionado para $1 ao clicar em continuar."
+  },
+  "confirmConnectCustodianText": {
+    "message": "Para conectar suas contas, faça login em sua conta $1 e clique no botão \"conectar ao MMI\"."
+  },
+  "confirmConnectionTitle": {
+    "message": "Confirmar conexão ao $1"
   },
   "confirmPassword": {
     "message": "Confirmar a senha"
@@ -752,6 +777,9 @@
   },
   "connectCustodialAccountTitle": {
     "message": "Contas custodiadas"
+  },
+  "connectCustodianAccounts": {
+    "message": "Conectar contas $1"
   },
   "connectManually": {
     "message": "Conectar manualmente ao site atual"
@@ -1434,6 +1462,18 @@
   },
   "enhancedTokenDetectionAlertMessage": {
     "message": "A detecção aprimorada de tokens está disponível no momento em $1. $2"
+  },
+  "ensDomainsSettingDescriptionIntroduction": {
+    "message": "A MetaMask permite que você veja domínios ENS direto na barra de endereços do seu navegador. Veja como funciona:"
+  },
+  "ensDomainsSettingDescriptionOutroduction": {
+    "message": "Tenha em mente que usar esse recurso expõe seu endereço IP a serviços de IPFS de terceiros."
+  },
+  "ensDomainsSettingDescriptionPart1": {
+    "message": "A MetaMask verifica o contrato ENS da Ethereum para encontrar o código conectado ao nome ENS."
+  },
+  "ensDomainsSettingDescriptionPart2": {
+    "message": "Se o código estiver vinculado ao IPFS, você poderá ver o conteúdo associado a ele (geralmente um site)."
   },
   "ensDomainsSettingTitle": {
     "message": "Exibir domínios ENS na barra de endereço"
@@ -2313,6 +2353,9 @@
   "mmiBuiltAroundTheWorld": {
     "message": "O MetaMask Institutional é projetado e desenvolvido ao redor do mundo."
   },
+  "mmiNewNFTDetectedInNFTsTabMessage": {
+    "message": "Permita que o MetaMask Institutional detecte e exiba NFTs automaticamente na sua carteira."
+  },
   "more": {
     "message": "mais"
   },
@@ -2325,6 +2368,38 @@
   },
   "name": {
     "message": "Nome"
+  },
+  "nameAddressLabel": {
+    "message": "Endereço",
+    "description": "Label above address field in name component modal."
+  },
+  "nameInstructionsNew": {
+    "message": "Você está interagindo com um endereço de contrato desconhecido. Caso confie nesse autor, defina um nome de exibição pessoal para identificá-lo daqui para frente.",
+    "description": "Instruction text in name component modal when value is not recognised."
+  },
+  "nameInstructionsSaved": {
+    "message": "As interações com este endereço serão sempre identificadas usando este nome de exibição pessoal.",
+    "description": "Instruction text in name component modal when value is saved."
+  },
+  "nameLabel": {
+    "message": "Nome de exibição",
+    "description": "Label above name input field in name component modal."
+  },
+  "nameModalTitleNew": {
+    "message": "Endereço desconhecido",
+    "description": "Title of the modal created by the name component when value is not recognised."
+  },
+  "nameModalTitleSaved": {
+    "message": "Endereço salvo",
+    "description": "Title of the modal created by the name component when value is saved."
+  },
+  "nameNoProposedNames": {
+    "message": "Nenhum nome proposto encontrado",
+    "description": "Text shown in the proposed name dropdown if none found."
+  },
+  "nameSetPlaceholder": {
+    "message": "Defina um nome de exibição pessoal...",
+    "description": "Placeholder text for name input field in name component modal."
   },
   "nativeToken": {
     "message": "O token nativo dessa rede é $1. Esse é o token usado para taxas de gás.",
@@ -2398,6 +2473,9 @@
   "networkNameTestnet": {
     "message": "Testnet"
   },
+  "networkNameZkSyncEra": {
+    "message": "zkSync Era"
+  },
   "networkProvider": {
     "message": "Provedor de rede"
   },
@@ -2449,6 +2527,15 @@
   },
   "newContract": {
     "message": "Novo contrato"
+  },
+  "newNFTDetectedInImportNFTsMessageStrongText": {
+    "message": "Configurações > Segurança e privacidade"
+  },
+  "newNFTDetectedInNFTsTabMessage": {
+    "message": "Permita que a MetaMask detecte e exiba NFTs automaticamente na sua carteira."
+  },
+  "newNFTsAutodetected": {
+    "message": "Detecção automática de NFTs"
   },
   "newNetworkAdded": {
     "message": "“$1” foi adicionado com sucesso!"
@@ -2834,6 +2921,15 @@
   "notifications9Title": {
     "message": "👓 Estamos facilitando a leitura das transações."
   },
+  "notificationsBuySellActionText": {
+    "message": "Experimente no MetaMask Portfolio"
+  },
+  "notificationsBuySellDescription": {
+    "message": "Apresentando o botão \"Comprar e Vender\", que dá a você acesso fácil ao nosso mais novo recurso: Vender. Ao clicar, você será redirecionado ao MetaMask Portfolio, onde poderá converter seus criptoativos em dinheiro em instantes. Disponível inicialmente para ETH na mainnet nos EUA (restrições por estado se aplicam), Reino Unido e partes da Europa."
+  },
+  "notificationsBuySellTitle": {
+    "message": "Venda seus criptoativos, receba dinheiro"
+  },
   "notificationsDropLedgerFirefoxDescription": {
     "message": "O Firefox não oferece mais suporte ao U2F, então a Ledger não funcionará com a MetaMask no Firefox. Em vez disso, experimente a MetaMask no Google Chrome.",
     "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
@@ -3180,6 +3276,14 @@
     "message": "Permitir que o snap derive chaves arbitrárias únicas a esse snap sem as expor. Essas chaves são separadas das suas contas na MetaMask e não estão relacionadas às suas chaves privadas ou à Frase de Recuperação Secreta. Os outros snaps não podem acessar essas informações.",
     "description": "An extended description for the `snap_getEntropy` permission"
   },
+  "permission_getLocale": {
+    "message": "Ver seu idioma de preferência.",
+    "description": "The description for the `snap_getLocale` permission"
+  },
+  "permission_getLocaleDescription": {
+    "message": "Permita que esse Snap acesse seu idioma de preferência a partir de suas configurações da MetaMask. Isso pode ser usado para traduzir e exibir o conteúdo do Snap usando seu idioma.",
+    "description": "An extended description for the `snap_getLocale` permission"
+  },
   "permission_lifecycleHooks": {
     "message": "Usar ganchos de ciclo de vida.",
     "description": "The description for the `endowment:lifecycle-hooks` permission"
@@ -3191,6 +3295,10 @@
   "permission_manageAccounts": {
     "message": "Adicionar e controlar contas Ethereum",
     "description": "The description for `snap_manageAccounts` permission"
+  },
+  "permission_manageAccountsDescription": {
+    "message": "Permita que este Snap adicione ou remova contas Ethereum e, depois, transacione e assine com essas contas.",
+    "description": "An extended description for the `snap_manageAccounts` permission"
   },
   "permission_manageBip32Keys": {
     "message": "Controle suas contas e ativos em $1 ($2).",
@@ -3833,6 +3941,9 @@
     "message": "Isso depende de $1, que terá acesso ao seu endereço Ethereum e ao seu endereço IP. $2",
     "description": "$1 is the link to etherscan url and $2 is the link to the privacy policy of consensys APIs"
   },
+  "showIncomingTransactionsExplainer": {
+    "message": "Isso depende de diferentes APIs de terceiros para cada rede, o que expõe seu endereço Ethereum e seu endereço IP."
+  },
   "showMore": {
     "message": "Exibir mais"
   },
@@ -3904,6 +4015,12 @@
   },
   "smartSwapsSubDescription": {
     "message": "* As trocas inteligentes tentarão enviar sua transação de forma privada, diversas vezes. Se todas as tentativas falharem, a transação será transmitida publicamente para garantir que sua troca ocorra com sucesso."
+  },
+  "snapAccounts": {
+    "message": "Contas de Snaps"
+  },
+  "snapAccountsDescription": {
+    "message": "Contas controladas por Snaps de terceiros."
   },
   "snapConfigure": {
     "message": "Configurar"
@@ -4043,9 +4160,17 @@
   "snapsNoInsight": {
     "message": "O snap não retornou nenhum insight"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "Você reconhece que qualquer Snap instalado é um Serviço Terceirizado, a menos que identificado de outra forma, conforme definido nos $1 da Consensys. Seu uso de Serviços Terceirizados é regido por termos e condições separados, estabelecidos pelo prestador de Serviços Terceirizados. A Consensys não faz recomendação de uso de nenhum Snap a nenhuma pessoa específica por qualquer motivo específico. Você acessa, confia e usa o Serviço Terceirizado por sua conta e risco. A Consensys se isenta de toda e qualquer responsabilidade por perdas relacionadas ao seu uso de Serviços Terceirizados.",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "Informações compartilhadas com Serviços de Terceiros serão coletadas diretamente por eles, de acordo com políticas de privacidade próprias. Por favor, consulte-as para obter mais informações.",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "A Consensys não tem acesso às informações que você compartilha com Serviços Terceirizados.",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "Gerencie seus snaps"
@@ -5200,6 +5325,9 @@
   },
   "useNftDetection": {
     "message": "Detectar NFTs automaticamente"
+  },
+  "useNftDetectionDescriptionText": {
+    "message": "Permita que a MetaMask use serviços de terceiros (como o OpenSea) para adicionar os NFTs que você possui. A detecção automática de NFTs expõe seu endereço IP e o endereço da sua conta a esses serviços. Ativar esse recurso pode associar seu endereço IP ao seu endereço Ethereum e exibir NFTs falsos enviados por golpistas via AirDrop. Você pode adicionar tokens manualmente para evitar esse risco."
   },
   "usePhishingDetection": {
     "message": "Usar detecção de phishing"

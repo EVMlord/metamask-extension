@@ -268,6 +268,12 @@
   "addSnapAccountModalDescription": {
     "message": "Découvrez les différentes options disponibles pour sécuriser votre compte avec lMetaMask Snaps"
   },
+  "addSnapAccountToggle": {
+    "message": "Activer la fonctionnalité « Ajouter un compte Snap »"
+  },
+  "addSnapAccountsDescription": {
+    "message": "En activant cette fonctionnalité, vous aurez la possibilité d’ajouter un compte Snap directement à partir de votre liste de comptes. Veuillez noter que les comptes Snap sont des services fournis par des tiers."
+  },
   "addSuggestedNFTs": {
     "message": "Ajouter les NFT suggérés"
   },
@@ -351,8 +357,14 @@
     "message": "Tous vos NFT via $1",
     "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
+  "allow": {
+    "message": "Autoriser"
+  },
   "allowExternalExtensionTo": {
     "message": "Autoriser cette extension externe à :"
+  },
+  "allowMmiToConnectToCustodian": {
+    "message": "Cela permettra à MMI de se connecter à $1 pour importer vos comptes."
   },
   "allowSpendToken": {
     "message": "Donner l’autorisation d’accéder à votre $1 ?",
@@ -702,6 +714,10 @@
   "coingecko": {
     "message": "CoinGecko"
   },
+  "comboNoOptions": {
+    "message": "Aucune option trouvée",
+    "description": "Default text shown in the combo field dropdown if no options."
+  },
   "configureSnapPopupDescription": {
     "message": "Vous devez maintenant quitter MetaMask pour configurer ce snap."
   },
@@ -719,6 +735,15 @@
   },
   "confirm": {
     "message": "Confirmer"
+  },
+  "confirmConnectCustodianRedirect": {
+    "message": "Nous vous redirigerons vers $1 une fois que vous cliquerez sur « Continuer »."
+  },
+  "confirmConnectCustodianText": {
+    "message": "Pour associer vos comptes, connectez-vous à votre compte $1 et cliquez sur le bouton « Se connecter à MMI »."
+  },
+  "confirmConnectionTitle": {
+    "message": "Confirmer la connexion à $1"
   },
   "confirmPassword": {
     "message": "Confirmer le mot de passe"
@@ -752,6 +777,9 @@
   },
   "connectCustodialAccountTitle": {
     "message": "Comptes de dépôt"
+  },
+  "connectCustodianAccounts": {
+    "message": "Associer $1 comptes"
   },
   "connectManually": {
     "message": "Se connecter manuellement au site actuel"
@@ -1434,6 +1462,18 @@
   },
   "enhancedTokenDetectionAlertMessage": {
     "message": "La détection améliorée des jetons est actuellement disponible sur $1. $2"
+  },
+  "ensDomainsSettingDescriptionIntroduction": {
+    "message": "MetaMask vous permet de voir les domaines ENS dans la barre d’adresse de votre navigateur. Voici comment cela fonctionne :"
+  },
+  "ensDomainsSettingDescriptionOutroduction": {
+    "message": "Veuillez noter que l’utilisation de cette fonctionnalité expose votre adresse IP à des services tiers IPFS."
+  },
+  "ensDomainsSettingDescriptionPart1": {
+    "message": "MetaMask vérifie le contrat ENS d’Ethereum pour trouver le code lié au nom de domaine ENS."
+  },
+  "ensDomainsSettingDescriptionPart2": {
+    "message": "Si le code renvoie à un IPFS, vous pouvez voir le contenu qui y est associé (généralement un site web)."
   },
   "ensDomainsSettingTitle": {
     "message": "Afficher les domaines ENS dans la barre d’adresse"
@@ -2313,6 +2353,9 @@
   "mmiBuiltAroundTheWorld": {
     "message": "MetaMask Institutional est conçu et établi dans le monde entier."
   },
+  "mmiNewNFTDetectedInNFTsTabMessage": {
+    "message": "Laissez MetaMask Institutional détecter et afficher automatiquement les NFT dans votre portefeuille."
+  },
   "more": {
     "message": "plus"
   },
@@ -2325,6 +2368,38 @@
   },
   "name": {
     "message": "Nom"
+  },
+  "nameAddressLabel": {
+    "message": "Adresse",
+    "description": "Label above address field in name component modal."
+  },
+  "nameInstructionsNew": {
+    "message": "Vous êtes en train d’interagir avec une adresse de contrat inconnue. Si vous faites confiance à cet auteur, attribuez-lui un identifiant personnel pour l’identifier plus facilement à l’avenir.",
+    "description": "Instruction text in name component modal when value is not recognised."
+  },
+  "nameInstructionsSaved": {
+    "message": "Les interactions avec cette adresse seront toujours identifiées à l’aide de cet identifiant personnel.",
+    "description": "Instruction text in name component modal when value is saved."
+  },
+  "nameLabel": {
+    "message": "Identifiant",
+    "description": "Label above name input field in name component modal."
+  },
+  "nameModalTitleNew": {
+    "message": "Adresse inconnue",
+    "description": "Title of the modal created by the name component when value is not recognised."
+  },
+  "nameModalTitleSaved": {
+    "message": "Adresse enregistrée",
+    "description": "Title of the modal created by the name component when value is saved."
+  },
+  "nameNoProposedNames": {
+    "message": "Aucun des noms proposés n’a été trouvé",
+    "description": "Text shown in the proposed name dropdown if none found."
+  },
+  "nameSetPlaceholder": {
+    "message": "Définir un identifiant personnel…",
+    "description": "Placeholder text for name input field in name component modal."
   },
   "nativeToken": {
     "message": "Le jeton natif de ce réseau est $1. C’est le jeton utilisé pour les frais de gaz.\n",
@@ -2398,6 +2473,9 @@
   "networkNameTestnet": {
     "message": "Testnet"
   },
+  "networkNameZkSyncEra": {
+    "message": "zkSync Era"
+  },
   "networkProvider": {
     "message": "Fournisseur de réseau"
   },
@@ -2449,6 +2527,15 @@
   },
   "newContract": {
     "message": "Nouveau contrat"
+  },
+  "newNFTDetectedInImportNFTsMessageStrongText": {
+    "message": "Paramètres > Sécurité et confidentialité"
+  },
+  "newNFTDetectedInNFTsTabMessage": {
+    "message": "Laissez MetaMask détecter et afficher automatiquement les NFT dans votre portefeuille."
+  },
+  "newNFTsAutodetected": {
+    "message": "Détection automatique des NFT"
   },
   "newNetworkAdded": {
     "message": "« $1 » a été ajouté avec succès !"
@@ -2834,6 +2921,15 @@
   "notifications9Title": {
     "message": "👓 Nous simplifions la lisibilité des transactions."
   },
+  "notificationsBuySellActionText": {
+    "message": "L’essayer sur MetaMask Portfolio"
+  },
+  "notificationsBuySellDescription": {
+    "message": "Nous vous présentons le bouton « Achat et vente » qui vous permet d’accéder facilement à notre dernière fonctionnalité : la vente. Si vous cliquez sur ce bouton, vous serez redirigé vers MetaMask Portfolio où vous pourrez convertir vos crypto-monnaies en argent en un rien de temps. Initialement disponible pour ETH sur le mainnet aux États-Unis (des restrictions s’appliquent selon l’État), au Royaume-Uni et dans certains pays d’Europe."
+  },
+  "notificationsBuySellTitle": {
+    "message": "Vendez vos crypto-monnaies et recevez de l’argent"
+  },
   "notificationsDropLedgerFirefoxDescription": {
     "message": "Firefox ne prend plus en charge la norme d’authentification U2F, donc Ledger ne fonctionnera pas avec MetaMask sur Firefox. Essayez plutôt d’utiliser MetaMask sur Google Chrome.",
     "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
@@ -3180,6 +3276,14 @@
     "message": "Autoriser le snap à dériver des clés arbitraires uniques à ce snap, sans les exposer. Ces clés sont distinctes de votre (vos) compte(s) MetaMask et ne sont pas associées à vos clés privées, ni à votre phrase de récupération secrète. Les autres snaps ne peuvent pas accéder à ces informations.",
     "description": "An extended description for the `snap_getEntropy` permission"
   },
+  "permission_getLocale": {
+    "message": "Afficher votre langue préférée.",
+    "description": "The description for the `snap_getLocale` permission"
+  },
+  "permission_getLocaleDescription": {
+    "message": "Autorisez ce Snap à accéder à votre langue préférée à partir de vos paramètres MetaMask. Cela permet de localiser et d’afficher le contenu du Snap dans votre langue.",
+    "description": "An extended description for the `snap_getLocale` permission"
+  },
   "permission_lifecycleHooks": {
     "message": "Utilisez les hooks de cycle de vie.",
     "description": "The description for the `endowment:lifecycle-hooks` permission"
@@ -3191,6 +3295,10 @@
   "permission_manageAccounts": {
     "message": "Ajouter et gérer des comptes Ethereum",
     "description": "The description for `snap_manageAccounts` permission"
+  },
+  "permission_manageAccountsDescription": {
+    "message": "Autorisez ce Snap si vous voulez ajouter ou supprimer des comptes Ethereum qui peuvent être utilisés pour effectuer des transactions et signer des documents.",
+    "description": "An extended description for the `snap_manageAccounts` permission"
   },
   "permission_manageBip32Keys": {
     "message": "Contrôlez vos comptes et vos actifs sous $1 ($2).",
@@ -3833,6 +3941,9 @@
     "message": "Sélectionnez ceci pour utiliser Etherscan afin d’afficher les transactions entrantes dans la liste des transactions",
     "description": "$1 is the link to etherscan url and $2 is the link to the privacy policy of consensys APIs"
   },
+  "showIncomingTransactionsExplainer": {
+    "message": "Ce processus fait appel à différentes API tierces pour chaque réseau et expose ainsi votre adresse Ethereum et votre adresse IP."
+  },
   "showMore": {
     "message": "Afficher plus"
   },
@@ -3904,6 +4015,12 @@
   },
   "smartSwapsSubDescription": {
     "message": "* Lorsque vous souscrivez un contrat de swap intelligent, ce contrat sera proposé en privé à différents investisseurs. Si toutes les tentatives échouent, le contrat sera diffusé publiquement afin de trouver preneur."
+  },
+  "snapAccounts": {
+    "message": "Comptes Snap"
+  },
+  "snapAccountsDescription": {
+    "message": "Comptes contrôlés par des Snaps tiers."
   },
   "snapConfigure": {
     "message": "Configurer"
@@ -4043,9 +4160,17 @@
   "snapsNoInsight": {
     "message": "Le snap n’a renvoyé aucun aperçu"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "Vous reconnaissez que tout Snap que vous installez (sauf indication contraire) est un « Service tiers » tel que défini dans les $1 de Consensys. L’utilisation des services tiers est régie par des conditions distinctes définies par les fournisseurs de services tiers. Consensys ne recommande pas à des personnes particulières d’utiliser un Snap pour des raisons particulières. Si vous décidez d’utiliser un service tiers, vous le faites à vos propres risques. Consensys décline toute responsabilité pour toute perte liée à l’utilisation des services tiers.",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "Toute information que vous partagez avec des services tiers sera collectée directement par ces services tiers conformément à leur politique de confidentialité. Pour plus d’informations, veuillez consulter leur politique de confidentialité.",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "Consensys n’a pas accès aux informations que vous partagez avec les fournisseurs de services tiers.",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "Gérez vos Snaps"
@@ -5200,6 +5325,9 @@
   },
   "useNftDetection": {
     "message": "Détection automatique des NFT"
+  },
+  "useNftDetectionDescriptionText": {
+    "message": "Laissez MetaMask ajouter les NFT que vous possédez en utilisant des services tiers (comme OpenSea). La détection automatique des NFT expose votre adresse IP et l’adresse de votre compte à ces services. Si vous activez cette fonctionnalité, un lien pourrait être établi entre votre adresse IP et votre adresse Ethereum, et entrainer l’affichage de faux NFT distribués par des escrocs. Vous pouvez ajouter des jetons manuellement pour éviter ce risque."
   },
   "usePhishingDetection": {
     "message": "Utiliser la fonction anti-hameçonnage"
